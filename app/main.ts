@@ -1,13 +1,13 @@
-import { Confirm } from "@common-module/app-components";
+import { Router } from "@common-module/app";
+import ConfirmTest from "./ConfirmTest.js";
+import IndexView from "./IndexView.js";
+import TabTest from "./TabTest.js";
 
 (() => {
   console.log("Start Test");
 
-  new Confirm({
-    title: "Test",
-    message: "This is a test",
-    onConfirm: () => {
-      console.log("Confirmed");
-    },
-  });
+  Router
+    .add("/", IndexView)
+    .add("/confirm", ConfirmTest)
+    .add("/tabs", TabTest);
 })();

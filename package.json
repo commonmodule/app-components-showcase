@@ -4,7 +4,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@common-module/app-components": "^0.1.0"
+    "@common-module/app-components": "^0.1.6"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
