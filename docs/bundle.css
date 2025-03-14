@@ -940,6 +940,25 @@ dialog.modal.quantity-input-dialog > main {
     bottom: calc(80px + env(safe-area-inset-bottom));
   }
 }
+.image-viewer {
+  position: fixed;
+  width: 0;
+  height: 0;
+}
+.image-viewer > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+.image-viewer > .thumbnail-list {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
 /* Markdown Components */
 .markdown-document i {
   font-style: italic;
