@@ -9,13 +9,18 @@ export default class IndexView extends View {
       new ButtonGroup(
         new Button({
           type: ButtonType.Outlined,
-          title: "Confirm Test",
+          title: "Confirm",
           onClick: () => Router.go("/confirm"),
         }),
         new Button({
           type: ButtonType.Outlined,
-          title: "Tab Test",
+          title: "Tab",
           onClick: () => Router.go("/tabs"),
+        }),
+        new Button({
+          type: ButtonType.Outlined,
+          title: "Image Viewer",
+          onClick: () => Router.go("/image-viewer"),
         }),
       ),
     ).appendTo(BodyNode);
