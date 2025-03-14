@@ -950,14 +950,43 @@ dialog.modal.quantity-input-dialog > main {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999999;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+}
+.image-viewer > header > .button-container {
+  display: flex;
+}
+.image-viewer > header > .button-container.left {
+  justify-self: start;
+}
+.image-viewer > header > .image-counter {
+  justify-self: center;
+}
+.image-viewer > header > .button-container.right {
+  justify-self: end;
+}
+.image-viewer > button.prev {
+  position: fixed;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+.image-viewer > .main-image-viewer {
+  position: fixed;
+}
+.image-viewer > button.next {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
 }
 .image-viewer > .thumbnail-list {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999999;
 }
 /* Markdown Components */
 .markdown-document i {
