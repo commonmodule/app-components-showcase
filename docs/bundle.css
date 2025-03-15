@@ -945,6 +945,14 @@ dialog.modal.quantity-input-dialog > main {
   width: 0;
   height: 0;
 }
+@container (width <= 520px) {
+  .image-viewer {
+    width: 100% !important;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+  }
+}
 .image-viewer > .container > header {
   position: fixed;
   top: 0;
