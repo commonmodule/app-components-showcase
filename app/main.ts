@@ -1,4 +1,4 @@
-import { Router } from "@common-module/app";
+import { Router, SPAInitializer } from "@common-module/app";
 import { AppCompConfig } from "@common-module/app-components";
 import {
   CloseIcon,
@@ -15,6 +15,8 @@ import ConfirmView from "./views/ConfirmView.js";
 import ImageViewerView from "./views/ImageViewerView.js";
 import IndexView from "./views/IndexView.js";
 import TabView from "./views/TabView.js";
+
+SPAInitializer.init();
 
 AppCompConfig.CloseIcon = CloseIcon;
 AppCompConfig.ShareIcon = ShareIcon;
