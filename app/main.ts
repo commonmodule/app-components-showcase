@@ -29,6 +29,10 @@ AppCompConfig.ResetZoomIcon = ResetZoomIcon;
 AppCompConfig.FullscreenIcon = FullscreenIcon;
 AppCompConfig.ExitFullscreenIcon = ExitFullscreenIcon;
 
+if (location.pathname.includes("/app-components-showcase")) {
+  Router.prefix = "/app-components-showcase";
+}
+
 Router
   .add("/", IndexView)
   .add("/confirm", ConfirmView)
