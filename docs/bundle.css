@@ -945,7 +945,7 @@ dialog.modal.quantity-input-dialog > main {
   width: 0;
   height: 0;
 }
-.image-viewer > header {
+.image-viewer > .container > header {
   position: fixed;
   top: 0;
   left: 0;
@@ -955,51 +955,61 @@ dialog.modal.quantity-input-dialog > main {
   align-items: center;
   padding: 16px 20px;
 }
-.image-viewer > header > .button-container {
+.image-viewer > .container > header > .button-container {
   display: flex;
   gap: 4px;
 }
-.image-viewer > header > .button-container > button {
+.image-viewer > .container > header > .button-container > button {
   background-color: transparent;
   color: var(--text-button-text-color);
 }
 @media (pointer: fine) {
-  .image-viewer > header > .button-container > button:hover:not(.disabled) {
+  .image-viewer > .container > header > .button-container > button:hover:not(.disabled) {
     background-color: var(--text-button-hover-bg-color);
   }
 }
-.image-viewer > header > .button-container > button:active:not(.disabled) {
+.image-viewer > .container > header > .button-container > button:active:not(.disabled) {
   background-color: var(--text-button-hover-bg-color);
 }
-.image-viewer > header > .button-container > button.disabled {
+.image-viewer > .container > header > .button-container > button.disabled {
   color: var(--text-button-disabled-text-color);
 }
-.image-viewer > header > .button-container.left {
+.image-viewer > .container > header > .button-container.left {
   justify-self: start;
 }
-.image-viewer > header > .image-counter {
+.image-viewer > .container > header > .image-counter {
   justify-self: center;
   font-size: 16px;
 }
-.image-viewer > header > .button-container.right {
+.image-viewer > .container > header > .button-container.right {
   justify-self: end;
 }
-.image-viewer > button.prev {
+.image-viewer > .container > button.prev {
   position: fixed;
   top: 50%;
   left: 40px;
   transform: translateY(-50%);
 }
-.image-viewer > .main-image-viewer {
+.image-viewer > .container > .main-image-viewer {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.image-viewer > button.next {
+.image-viewer > .container > button.next {
   position: fixed;
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
 }
-.image-viewer > .thumbnail-list {
+.image-viewer > .container > .zoom-controls {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.image-viewer > .container > .thumbnail-list {
   position: fixed;
   bottom: 0;
   left: 0;

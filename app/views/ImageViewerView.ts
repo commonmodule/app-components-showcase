@@ -1,10 +1,12 @@
-import { el, View } from "@common-module/app";
+import { BodyNode, el, View } from "@common-module/app";
 import { ImageViewer } from "@common-module/app-components";
 
 export default class ImageViewerView extends View {
   constructor() {
     super();
-    this.container = el(".image-viewer-view");
+    this.container = el(".image-viewer-view", "Image Viewer Showcase").appendTo(
+      BodyNode,
+    );
 
     new ImageViewer({
       images: [{
