@@ -985,6 +985,11 @@ dialog.modal.quantity-input-dialog > main {
 .image-viewer > .container > header > .button-container.left {
   justify-self: start;
 }
+@container (width > 520px) {
+  .image-viewer > .container > header > .button-container.left > button.share {
+    display: none;
+  }
+}
 .image-viewer > .container > header > .image-counter {
   justify-self: center;
   font-size: 16px;
@@ -992,11 +997,21 @@ dialog.modal.quantity-input-dialog > main {
 .image-viewer > .container > header > .button-container.right {
   justify-self: end;
 }
+@container (width <= 520px) {
+  .image-viewer > .container > header > .button-container.right > button.share {
+    display: none;
+  }
+}
 .image-viewer > .container > button.prev {
   position: fixed;
   top: 50%;
   left: 40px;
   transform: translateY(-50%);
+}
+@container (width <= 520px) {
+  .image-viewer > .container > button.prev {
+    display: none;
+  }
 }
 .image-viewer > .container > .main-image-viewer {
   position: fixed;
@@ -1009,6 +1024,11 @@ dialog.modal.quantity-input-dialog > main {
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
+}
+@container (width <= 520px) {
+  .image-viewer > .container > button.next {
+    display: none;
+  }
 }
 .image-viewer > .container > .zoom-controls {
   position: fixed;
