@@ -944,6 +944,7 @@ dialog.modal.quantity-input-dialog > main {
   position: fixed;
   width: 0;
   height: 0;
+  user-select: none;
 }
 @container (width <= 520px) {
   .image-viewer {
@@ -1030,6 +1031,15 @@ dialog.modal.quantity-input-dialog > main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 70%;
+  max-height: 70%;
+}
+.image-viewer > .container > .main-image-viewer > img {
+  flex: 1;
+  object-fit: contain;
 }
 .image-viewer > .container > .main-image-viewer > img:not(.dragging) {
   transition: transform 0.2s ease-in-out;
@@ -1048,7 +1058,7 @@ dialog.modal.quantity-input-dialog > main {
 }
 .image-viewer > .container > .zoom-controls {
   position: fixed;
-  bottom: 120px;
+  bottom: 140px;
   left: 50%;
   z-index: 99999;
   transform: translateX(-50%);
@@ -1057,10 +1067,15 @@ dialog.modal.quantity-input-dialog > main {
 }
 .image-viewer > .container > .thumbnail-list {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 30px;
+  left: 50%;
   z-index: 99999;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.image-viewer > .container > .thumbnail-list > .thumbnail-list-item {
+  height: 60px;
 }
 /* Markdown Components */
 .markdown-document i {
