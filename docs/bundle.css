@@ -1031,6 +1031,9 @@ dialog.modal.quantity-input-dialog > main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.image-viewer > .container > .main-image-viewer > img:not(.dragging) {
+  transition: transform 0.2s ease-in-out;
+}
 .image-viewer > .container > button.next {
   position: fixed;
   top: 50%;
@@ -1050,6 +1053,7 @@ dialog.modal.quantity-input-dialog > main {
   z-index: 99999;
   transform: translateX(-50%);
   display: flex;
+  gap: 8px;
 }
 .image-viewer > .container > .thumbnail-list {
   position: fixed;
