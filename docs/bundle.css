@@ -1045,22 +1045,6 @@ dialog.modal.quantity-input-dialog > main {
 .image-viewer > .container > .main-image-viewer > img:not(.dragging) {
   transition: transform 0.2s ease-in-out;
 }
-.image-viewer > .container > .main-image-viewer > img {
-  transform: translate(-50%, -50%);
-  transition: transform 0.5s ease;
-}
-.image-viewer > .container > .main-image-viewer > img.enter-from-left {
-  transform: translate(-150%, -50%);
-}
-.image-viewer > .container > .main-image-viewer > img.enter-from-right {
-  transform: translate(50%, -50%);
-}
-.image-viewer > .container > .main-image-viewer > img.exit-to-left {
-  transform: translate(-150%, -50%);
-}
-.image-viewer > .container > .main-image-viewer > img.exit-to-right {
-  transform: translate(150%, -50%);
-}
 .image-viewer > .container > button.next {
   position: fixed;
   top: 50%;
