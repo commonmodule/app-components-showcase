@@ -955,29 +955,6 @@ dialog.modal.quantity-input-dialog > main {
     margin: 0;
   }
 }
-.image-viewer > .container {
-  /*>.main-image-viewer {
-      position : fixed;
-      top      : 50%;
-      left     : 50%;
-      transform: translate(-50%, -50%);
-
-      width     : 100%;
-      height    : 100%;
-      display   : flex;
-      max-width : calc(100% - 230px);
-      max-height: calc(100% - 230px);
-
-      >img.current {
-        flex      : 1;
-        object-fit: contain;
-
-        &:not(.dragging) {
-          transition: transform 0.2s ease-in-out;
-        }
-      }
-    }*/
-}
 .image-viewer > .container > header {
   position: fixed;
   top: 0;
@@ -1054,11 +1031,17 @@ dialog.modal.quantity-input-dialog > main {
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
   max-width: calc(100% - 230px);
   max-height: calc(100% - 230px);
-  object-fit: contain;
+}
+@container (width <= 520px) {
+  .image-viewer > .container > .main-image-viewer > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.image-viewer > .container > .main-image-viewer > img:not(.current) {
+  pointer-events: none;
 }
 .image-viewer > .container > button.next {
   position: fixed;
@@ -1080,6 +1063,11 @@ dialog.modal.quantity-input-dialog > main {
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
+}
+@container (width <= 520px) {
+  .image-viewer > .container > .zoom-controls {
+    display: none;
+  }
 }
 .image-viewer > .container > footer {
   position: fixed;
