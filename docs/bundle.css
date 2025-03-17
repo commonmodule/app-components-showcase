@@ -1057,6 +1057,12 @@ dialog.modal.quantity-input-dialog > main {
     display: none;
   }
 }
+.image-viewer > .container:has(.main-image-viewer > img:only-child) > button.prev,
+.image-viewer > .container:has(.main-image-viewer:empty) > button.prev,
+.image-viewer > .container:has(.main-image-viewer > img:only-child) > button.next,
+.image-viewer > .container:has(.main-image-viewer:empty) > button.next {
+  display: none;
+}
 .image-viewer > .container > .zoom-controls {
   position: fixed;
   bottom: 140px;
