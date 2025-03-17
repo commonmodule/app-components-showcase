@@ -2,6 +2,7 @@ import { Router, SPAInitializer } from "@common-module/app";
 import { AppCompConfig } from "@common-module/app-components";
 import {
   CloseIcon,
+  DownloadIcon,
   ExitFullscreenIcon,
   FullscreenIcon,
   NextIcon,
@@ -20,6 +21,7 @@ SPAInitializer.init();
 
 AppCompConfig.CloseIcon = CloseIcon;
 AppCompConfig.ShareIcon = ShareIcon;
+AppCompConfig.DownloadIcon = DownloadIcon;
 
 AppCompConfig.PrevIcon = PrevIcon;
 AppCompConfig.NextIcon = NextIcon;

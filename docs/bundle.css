@@ -999,7 +999,8 @@ dialog.modal.quantity-input-dialog > main {
   justify-self: start;
 }
 @container (width > 520px) {
-  .image-viewer > .container > header > .button-container.left > button.share {
+  .image-viewer > .container > header > .button-container.left > button.share,
+  .image-viewer > .container > header > .button-container.left > button.download {
     display: none;
   }
 }
@@ -1011,7 +1012,8 @@ dialog.modal.quantity-input-dialog > main {
   justify-self: end;
 }
 @container (width <= 520px) {
-  .image-viewer > .container > header > .button-container.right > button.share {
+  .image-viewer > .container > header > .button-container.right > button.share,
+  .image-viewer > .container > header > .button-container.right > button.download {
     display: none;
   }
 }
