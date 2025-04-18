@@ -1,5 +1,5 @@
-import { el, View } from "@common-module/app";
-import { ConfirmDialog } from "@common-module/app-components";
+import { el, View } from "@commonmodule/app";
+import { ConfirmDialog } from "@commonmodule/app-components";
 
 export default class ConfirmView extends View {
   constructor() {

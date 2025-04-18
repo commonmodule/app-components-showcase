@@ -1,5 +1,5 @@
-import { BodyNode, el, View } from "@common-module/app";
-import { ImageViewer } from "@common-module/app-components";
+import { BodyNode, el, View } from "@commonmodule/app";
+import { ImageViewer } from "@commonmodule/app-components";
 
 export default class ImageViewerView extends View {
   constructor() {

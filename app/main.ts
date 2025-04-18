@@ -1,5 +1,5 @@
-import { Router, SPAInitializer } from "@common-module/app";
-import { AppCompConfig } from "@common-module/app-components";
+import { Router, SPAInitializer } from "@commonmodule/app";
+import { AppCompConfig } from "@commonmodule/app-components";
 import {
   CloseIcon,
   DownloadIcon,
@@ -11,7 +11,7 @@ import {
   ShareIcon,
   ZoomInIcon,
   ZoomOutIcon,
-} from "@common-module/svg-icons";
+} from "@commonmodule/svg-icons";
 import ConfirmView from "./views/ConfirmView.js";
 import ImageViewerView from "./views/ImageViewerView.js";
 import IndexView from "./views/IndexView.js";

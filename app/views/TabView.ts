@@ -1,5 +1,5 @@
-import { BodyNode, el, View } from "@common-module/app";
-import { AppCompConfig, Tab, TabGroup } from "@common-module/app-components";
+import { BodyNode, el, View } from "@commonmodule/app";
+import { AppCompConfig, Tab, TabGroup } from "@commonmodule/app-components";
 
 export default class TabView extends View {
   private tabGroup: TabGroup<string>;
